@@ -1,0 +1,16 @@
+<div>
+<form >
+  <h3 >Add a Link</h3>
+  <div>
+    <label for="title">Title:</label>
+    <input name="title" #newtitle class="form-control"> <!--Aggiunta una variabile di template-->
+  </div>
+  <div>
+    <label for="link">Link:</label>
+    <input name="link" #newlink class="form-control"> <!--Aggiunta una variabile di template-->
+  </div>
+  <button (click)="addArticle(newtitle, newlink)" class="btn btn-primary"> <!--Passiamo le variabili come parametro --> 
+  Submit link
+  </button>
+</form>
+</div>
